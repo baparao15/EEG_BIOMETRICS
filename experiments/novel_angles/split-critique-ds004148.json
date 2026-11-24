@@ -1,0 +1,243 @@
+{
+  "role_sizes": [
+    {
+      "claim": 12,
+      "reference": 24,
+      "calibration": 12,
+      "test": 12,
+      "rotations": 20
+    }
+  ],
+  "identity_pairs": {
+    "rotation": 2880,
+    "crossfit": 3540
+  },
+  "results": {
+    "rotation": {
+      "One-Class SVM": {
+        "per_claimant": {
+          "frr": 0.8177083333333334,
+          "far": 0.02816840277777778,
+          "eer": 0.38058449074074074,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.4236111111111111,
+            "median_within_claimant_span": 0.0625,
+            "max_within_claimant_span": 0.4236111111111111,
+            "claimants_with_zero_and_at_least_15pct": 4
+          }
+        },
+        "pooled": {
+          "frr": 0.8916666666666667,
+          "far": 0.011357060185185185,
+          "eer": 0.38058449074074074,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.125,
+            "median_within_claimant_span": 0.013888888888888888,
+            "max_within_claimant_span": 0.12152777777777778,
+            "claimants_with_zero_and_at_least_15pct": 0
+          }
+        }
+      },
+      "Isolation Forest": {
+        "per_claimant": {
+          "frr": 0.78125,
+          "far": 0.030034722222222223,
+          "eer": 0.31319444444444444,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.3472222222222222,
+            "median_within_claimant_span": 0.05381944444444445,
+            "max_within_claimant_span": 0.3472222222222222,
+            "claimants_with_zero_and_at_least_15pct": 7
+          }
+        },
+        "pooled": {
+          "frr": 0.8784722222222222,
+          "far": 0.016493055555555556,
+          "eer": 0.31319444444444444,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.20833333333333334,
+            "median_within_claimant_span": 0.010416666666666666,
+            "max_within_claimant_span": 0.1527777777777778,
+            "claimants_with_zero_and_at_least_15pct": 0
+          }
+        }
+      },
+      "Cosine kNN": {
+        "per_claimant": {
+          "frr": 0.9284722222222223,
+          "far": 0.015668402777777778,
+          "eer": 0.4291087962962963,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.14583333333333334,
+            "median_within_claimant_span": 0.034722222222222224,
+            "max_within_claimant_span": 0.14583333333333334,
+            "claimants_with_zero_and_at_least_15pct": 0
+          }
+        },
+        "pooled": {
+          "frr": 0.9423611111111111,
+          "far": 0.010112847222222223,
+          "eer": 0.4291087962962963,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.08680555555555555,
+            "median_within_claimant_span": 0.005208333333333333,
+            "max_within_claimant_span": 0.08680555555555555,
+            "claimants_with_zero_and_at_least_15pct": 0
+          }
+        }
+      },
+      "Logistic": {
+        "per_claimant": {
+          "frr": 0.8097222222222222,
+          "far": 0.024638310185185187,
+          "eer": 0.22447916666666667,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.2916666666666667,
+            "median_within_claimant_span": 0.04861111111111111,
+            "max_within_claimant_span": 0.2916666666666667,
+            "claimants_with_zero_and_at_least_15pct": 3
+          }
+        },
+        "pooled": {
+          "frr": 0.9300347222222223,
+          "far": 0.011255787037037036,
+          "eer": 0.22447916666666667,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.1111111111111111,
+            "median_within_claimant_span": 0.026041666666666664,
+            "max_within_claimant_span": 0.1111111111111111,
+            "claimants_with_zero_and_at_least_15pct": 0
+          }
+        }
+      },
+      "SVM_RBF": {
+        "per_claimant": {
+          "frr": 0.6975694444444445,
+          "far": 0.02443576388888889,
+          "eer": 0.24636863425925926,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.3506944444444444,
+            "median_within_claimant_span": 0.050347222222222224,
+            "max_within_claimant_span": 0.3472222222222222,
+            "claimants_with_zero_and_at_least_15pct": 2
+          }
+        },
+        "pooled": {
+          "frr": 0.8074652777777778,
+          "far": 0.01166087962962963,
+          "eer": 0.24636863425925926,
+          "across_test_groups": {
+            "group_far_min": 0.0,
+            "group_far_max": 0.15625,
+            "median_within_claimant_span": 0.017361111111111112,
+            "max_within_claimant_span": 0.15625,
+            "claimants_with_zero_and_at_least_15pct": 1
+          }
+        }
+      }
+    },
+    "crossfit": {
+      "One-Class SVM": {
+        "per_claimant": {
+          "frr": 0.8177083333333334,
+          "far": 0.030649717514124295,
+          "eer": 0.38055555555555554
+        }
+      },
+      "Isolation Forest": {
+        "per_claimant": {
+          "frr": 0.78125,
+          "far": 0.03067325800376648,
+          "eer": 0.3143832391713748
+        }
+      },
+      "Cosine kNN": {
+        "per_claimant": {
+          "frr": 0.9284722222222223,
+          "far": 0.016137005649717515,
+          "eer": 0.4291666666666667
+        }
+      }
+    },
+    "all_other_genuine_cal": {
+      "One-Class SVM": {
+        "per_claimant": {
+          "frr": 0.29583333333333334,
+          "far": 0.47491760828625235,
+          "eer": 0.38055555555555554
+        },
+        "pooled": {
+          "frr": 0.10625,
+          "far": 0.8052024482109228,
+          "eer": 0.38055555555555554
+        }
+      },
+      "Isolation Forest": {
+        "per_claimant": {
+          "frr": 0.22013888888888888,
+          "far": 0.4375,
+          "eer": 0.3143832391713748
+        },
+        "pooled": {
+          "frr": 0.12986111111111112,
+          "far": 0.5804613935969868,
+          "eer": 0.3143832391713748
+        }
+      },
+      "Cosine kNN": {
+        "per_claimant": {
+          "frr": 0.3840277777777778,
+          "far": 0.49079566854990586,
+          "eer": 0.4291666666666667
+        },
+        "pooled": {
+          "frr": 0.13958333333333334,
+          "far": 0.7954802259887006,
+          "eer": 0.4291666666666667
+        }
+      }
+    }
+  },
+  "supervised_membership": {
+    "Logistic": {
+      "seen_donors": {
+        "accepts": 2514,
+        "attempts": 138240,
+        "far": 0.01818576388888889
+      },
+      "unseen_test": {
+        "accepts": 1703,
+        "attempts": 69120,
+        "far": 0.024638310185185187
+      }
+    },
+    "SVM_RBF": {
+      "seen_donors": {
+        "accepts": 2785,
+        "attempts": 138240,
+        "far": 0.020146122685185185
+      },
+      "unseen_test": {
+        "accepts": 1689,
+        "attempts": 69120,
+        "far": 0.02443576388888889
+      }
+    }
+  },
+  "cohort": "ds004148",
+  "subjects": 60,
+  "retained_probe_windows_per_state": 24,
+  "enrollment_windows": 32,
+  "test_visits": {
+    "V3": 60
+  }
+}

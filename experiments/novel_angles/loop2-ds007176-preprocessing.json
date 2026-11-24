@@ -1,0 +1,26 @@
+{
+  "generated": 232,
+  "failed": 0,
+  "references": 40,
+  "exact_events": 40,
+  "exact_values": 0,
+  "residual": {
+    "event_jaccard": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "waveform_correlation": {
+      "median": 0.9999999999999998,
+      "min": 0.9999999999999909,
+      "max": 1.0
+    },
+    "rmse": {
+      "median": 8.055012846235534e-10,
+      "min": 1.4607177843316936e-10,
+      "max": 1.1057680538508834e-08
+    }
+  },
+  "same_epoch_count": 40,
+  "minimum_epochs": 45
+}

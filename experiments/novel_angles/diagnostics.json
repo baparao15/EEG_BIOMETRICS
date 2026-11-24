@@ -1,0 +1,30 @@
+{
+  "calibration": {
+    "leave_one_calibrator_out_delta_far_range": [
+      -0.0017006802721088437,
+      0.022108843537414963
+    ],
+    "target_frr_quartiles": [
+      0.6666666666666666,
+      0.9583333333333334,
+      1.0
+    ],
+    "impostors_with_any_false_accept": 15,
+    "stability_vs_frr_spearman": {
+      "rho": -0.4510200468096862,
+      "nominal_p": 0.014064513101229267
+    }
+  },
+  "metadata": {
+    "complete_timing": 1,
+    "V2_late_timing": 3,
+    "late_visit_counts": {
+      "V3": 24,
+      "V4": 5
+    }
+  },
+  "preprocessing": {
+    "shared_recordings": 40,
+    "median_log_band_feature_rmse": 0.7487753339729519
+  }
+}
